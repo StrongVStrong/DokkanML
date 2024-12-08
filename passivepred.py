@@ -3,7 +3,6 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
-from datetime import datetime
 import numpy as np
 
 # Load the CSV
