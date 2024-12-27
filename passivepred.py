@@ -58,5 +58,5 @@ def predict_passive_skill(year, month, vectorizer, model, data):
     return " ".join(skill_words[0]) if skill_words else "Unknown skill"
 
 # Example prediction for May 2025
-predicted_skill = predict_passive_skill(2025, 5, vectorizer, model, data)
-print(f"Predicted Passive Skill for May 2025: {predicted_skill}")
+predicted_skill = predict_passive_skill(2025, 2, vectorizer, model, data)
+print(f"Predicted Passive Skill for Feb 2025: {predicted_skill}")
