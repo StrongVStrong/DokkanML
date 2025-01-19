@@ -15,7 +15,7 @@ def parse_buffs(passive_text):
     SoT_def_buff_value = 0
     on_Super_def_buff_value = 0
     
-    # Define on_Super patterns (e.g., after receiving, when performing super attack)
+    # Define on_Super patterns (e.g., after receiving, when performing super attack idk what I missed let me know in the comments)
     on_Super_patterns = [
         r'after receiving', r'within the same turn', r'when performing a super attack',
         r'when attacking', r'when receiving', r'after performing a super attack', 
@@ -86,13 +86,13 @@ def plot_trends(df):
     max_on_Super_atk_date = df_grouped['on_Super ATK Buff'].idxmax()
     max_SoT_def_date = df_grouped['SoT DEF Buff'].idxmax()
     max_on_Super_def_date = df_grouped['on_Super DEF Buff'].idxmax()
-
+    
     # Print the largest values for ATK and DEF buffs
     print(f"Largest SoT ATK Buff: {max_SoT_atk_buff}% (Released on {max_SoT_atk_date.date()})")
     print(f"Largest on_Super ATK Buff: {max_on_Super_atk_buff}% (Released on {max_on_Super_atk_date.date()})")
     print(f"Largest SoT DEF Buff: {max_SoT_def_buff}% (Released on {max_SoT_def_date.date()})")
     print(f"Largest on_Super DEF Buff: {max_on_Super_def_buff}% (Released on {max_on_Super_def_date.date()})")
-
+    
     # Plotting the trends
     plt.figure(figsize=(10, 6))
     
